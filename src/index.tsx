@@ -149,7 +149,7 @@ export default class HorizontalPicker extends PureComponent<HorizontalPickerProp
   componentDidMount() {
     if(this.props.initialPosition) {
       setTimeout(() => {
-        this.scrollToPosition(this.props.initialPosition)    
+        this.scrollToPosition(this.props.initialPosition || 0)    
       },100)
     }
   }
