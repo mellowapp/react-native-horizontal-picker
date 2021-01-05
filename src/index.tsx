@@ -16,7 +16,8 @@ export interface HorizontalPickerProps extends ScrollViewProps {
   renderItem: (item: any, index: number) => ReactNode,
   itemWidth: number,
   snapTimeout?: number
-  onChange?: (position: number) => void
+  onChange?: (position: number) => void,
+  initialPosition?: number
 };
 
 
